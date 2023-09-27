@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Моя веб-страница</title>
+    <style>
+        /* Стили для скрытого текста */
+        #more-info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f5f5f5;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+      <meta charset="utf-8"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Меня зовут Эмиль &#128526;</h1>
+        <div class="photos">
+            <img class="photo" src="img/image1.jpg" alt="Фото 1">
+            <img class="photo" src="img/image2.jpg" alt="Фото 2">
+            <img class="photo" src="img/image3.jpg" alt="Фото 3">
+        </div>
+
+        </p>Краткая информация обо мне:</p>
+        </p>Студент Южно - Уральского Государственного Университета на 3 курсе по специальности: "Прикладная математика и программирование"</p>
+
+        <button id="show-more-btn">Показать больше информации</button>
+        <div id="more-info">
+         </p> Очень люблю кошек и программирование, хочу изучать новое! </p>
+          </p>Контактные данные: </p>
+          </p>VK: <a href ="https://vk.com/etogxku">Эмиль Алиев</a> </p>
+          </p>Telegram: @slapuslapu </p>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("show-more-btn").addEventListener("click", function() {
+            var moreInfo = document.getElementById("more-info");
+
+            if (moreInfo.style.display === "none") {
+                moreInfo.style.display = "block";
+                this.textContent = "Скрыть информацию"; // Изменение текста кнопки при отображении дополнительной информации
+            } else {
+                moreInfo.style.display = "none";
+                this.textContent = "Показать больше информации"; // Изменение текста кнопки при скрытии дополнительной информации
+            }
+        });
+    </script>
+
+
+    </div>
+</body>
+</html>
+
